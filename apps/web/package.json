@@ -1,0 +1,33 @@
+{
+  "name": "novapay",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm run dev",
+    "dev:api": "cd apps/api && uvicorn app.main:app --reload",
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "^16.2.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@tanstack/react-query": "^5.80.0",
+    "recharts": "^2.12",
+    "framer-motion": "^11",
+    "zustand": "^4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "concurrently": "^9.0.1"
+  }
+}
