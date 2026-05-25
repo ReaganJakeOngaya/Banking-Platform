@@ -1,0 +1,7 @@
+[project]
+name = "novapay-api"
+version = "0.1.0"
+description = "NovaPay Banking API"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
